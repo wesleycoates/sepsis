@@ -132,7 +132,7 @@ define "AdmissionDateTime":
     code '8656-1' from "LOINC:2.72" display "Hospital admission Datetime"
     //Hospital admission date:TmStp:Pt:^Patient:Qn (8656-1) LOINC Concept
     //Note from Matt: this above concept (Datetime stamp) might be this FHIR resource? Encounter.plannedStartDate
-    //From Matt: I chose LOINC code 8656-1 over LOINC code 52455-3 since it's applied to the Hospital Setting
+    //Note from Matt: per E.B. Brant et al (Digital Medicine, 2022), "Admit Time" could map directly to FHIR data element Encounter.period.start
 
 //[Condition: "Severe Sepsis"] C where C.admitDateTime during MeasurementPeriod
 //Note the above line of code gets at retrieving Severe Sepsis (only) cases according to Admit Date (only), within the Measurement Period (only)
